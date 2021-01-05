@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="/public/lib/dist/bootstrap.css"> -->
+    <link rel="stylesheet" type="text/css" href="/public/lib/bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body>
+    <div class="header container">
+        <div class="jumbotron-fluid">
+            <h1>迭代回顾会</h1>
+            <a class="btn btn-success" href="/post">点这里编写内容</a>
+        </div>
+    </div>
+    <div class="comments container">
+        {{each comments}}
+        <span>{{$value.name}}：</span>
+        <ul class="list-group">
+            <li class="list-group-item">
+                {{$value.good}} 
+            </li>
+            <li class="list-group-item">
+                {{$value.bad}}
+            </li>
+            <li class="list-group-item">
+                {{$value.people}}
+            </li>
+            <li class="list-group-item">
+                {{$value.suggest}}
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</body>
+</html>

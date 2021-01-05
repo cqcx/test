@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/public/lib/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="header container">
+        <div class="jumbotron-fluid">
+            <h1><a href="/"><small>点击返回主页面</small></a></h1>
+        </div>
+    </div>
+    <div class="comments container">
+        <form action="/pinglun" method="get">
+            <div class="form-group">
+                <label for="input_name">你的名字</label>
+                <input type="text" class="form-control" required minlength="2" maxlength="4"
+                id="input_name" name="name" placeholder="请输入你的名字">
+            </div>
+            <div class="form-group">
+                <label for="textares_good">本次迭代好的地方</label>
+                <textarea class="form-control" name="good" id="textares_good" cols="30" rows="10"
+                required minlength="1" placeholder="最少输入一个字" maxlength=""></textarea>
+            </div>
+            <div class="form-group">
+                <label for="textares_bad">本次迭代不好的地方</label>
+                <textarea class="form-control" name="bad" id="textares_bad" cols="30" rows="10"
+                required minlength="1" placeholder="最少输入一个字" maxlength=""></textarea>
+            </div>
+            <div class="form-group">
+                <label for="textares_people">感谢的人</label>
+                <textarea class="form-control" name="people" id="textares_people" cols="30" rows="10"
+                required minlength="1" placeholder="最少输入一个字" maxlength=""></textarea>
+            </div>
+            <div class="form-group">
+                <label for="textares_suggest">建议或者意见</label>
+                <textarea class="form-control" name="suggest" id="textares_suggest" cols="30" rows="10"
+                required minlength="1" placeholder="最少输入一个字" maxlength=""></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">发表</button>
+        </form>
+    </div>
+</body>
+</html>
